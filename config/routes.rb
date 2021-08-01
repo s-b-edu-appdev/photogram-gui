@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get("/users/:path_username", { :controller => "users", :action => "user_detail" })
   get("/photos", { :controller => "photos", :action => "photo_list" })
   get("/photos/:photo_id", { :controller => "photos", :action => "photo_detail" })
-
+  get("/delete_photo/:photo_id", { :controller => "photos", :action => "delete_photo" })
 end
